@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.text-dark-cyan {
+  color: hsl(158, 36%, 37%);
+}
+
+.bg-dark-cyan {
+  background-color: hsl(158, 36%, 37%);
+}
+
+.text-dark-cream {
+  color: hsl(30, 38%, 92%);
+}
+
+.bg-dark-cream {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.text-dark-cream {
+  color: hsl(212, 21%, 14%);
+}
+
+.bg-dark-cream {
+  background-color: hsl(212, 21%, 14%);
+}
+
+.text-dark-cream {
+  color: hsl(228, 12%, 48%);
+}
+
+.bg-dark-cream {
+  background-color: hsl(228, 12%, 48%);
+}
+
+.text-dark-cream {
+  color: hsl(0, 0%, 100%);
+}
+
+.bg-dark-cream {
+  background-color: hsl(0, 0%, 100%);
+}

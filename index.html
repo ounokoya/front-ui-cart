@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    
+    .attribution a { color: hsl(228, 45%, 44%); };
+    
+    body {
+      font-family: 'Fraunces', serif;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+
+    .text-dark-cyan {
+      color: hsl(158, 36%, 37%);
+    }
+
+    .bg-dark-cyan {
+      background-color: hsl(158, 36%, 37%);
+    }
+
+    .text-dark-cream {
+      color: hsl(30, 38%, 92%);
+    }
+
+    .bg-dark-cream {
+      background-color: hsl(30, 38%, 92%);
+    }
+
+    .text-dark-cream {
+      color: hsl(212, 21%, 14%);
+    }
+
+    .bg-dark-cream {
+      background-color: hsl(212, 21%, 14%);
+    }
+
+    .text-dark-cream {
+      color: hsl(228, 12%, 48%);
+    }
+
+    .bg-dark-cream {
+      background-color: hsl(228, 12%, 48%);
+    }
+
+    .text-dark-cream {
+      color: hsl(0, 0%, 100%);
+    }
+
+    .bg-dark-cream {
+      background-color: hsl(0, 0%, 100%);
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="/semantic.min.css">
+</head>
+<body class="bg-dark-cream" style="background-color: hsl(30, 38%, 92%);" >
+  <div class=" w-screen h-screen flex justify-center items-center" >
+    <div class=" w-4/12 pt-8">
+      <div class="w-full" >
+
+        <img 
+        src="images/image-product-mobile.jpg" 
+        alt="image"
+        class="rounded-tl-md rounded-tr-md w-full"
+        >
+
+      </div>
+
+      <div class="w-full -pl-12 pl-8 pt-6 pr-8 rounded-bl-md rounded-br-md" style="background-color: hsl(0, 0%, 100%);" >
+        <h3 class="mb-2" style="font-family: 'Montserrat', sans-serif; color: hsl(228, 12%, 48%); font-size: 14px;" >Parfum</h3>
+  
+        <h4 class="my-4" style="font-family: 'Fraunces', serif; font-size: 48px;" >
+          Gabrielle Essence Eau De Parfum
+        </h4>
+        
+        <p class="my-1" style="font-family: 'Montserrat', sans-serif; font-size: 14px;" >
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        
+        <div class="flex align-middle" >
+          <div class="" style="font-family: 'Fraunces', serif;color: hsl(158, 36%, 37%); font-size: 28px;" >
+            $149.99
+          </div>
+          <div class=" flex items-center" style="font-family: 'Fraunces', serif;">
+            <span class="line-through ml-2" >$169.99</span>
+          </div>
+        </div>
+        
+        <div class="w-full  mt-2 pb-8" >
+          <a class="ui primary button w-full text-center" style="background-color: hsl(158, 36%, 37%); color: hsl(0, 0%, 100%);"  >
+            <img class="ui middle aligned  image " width="15" src="/images/icon-cart.svg" alt="" srcset="">
+            <span class="ml-2">
+              Add to Cart
+            </span>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="attribution"  >
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </div>
+  
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/semantic.min.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
