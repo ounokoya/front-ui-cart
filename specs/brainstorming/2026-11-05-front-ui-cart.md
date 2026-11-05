@@ -23,3 +23,16 @@ Plan validé (G1, 2026-11-05) au niveau du programme : `frontmentor/specs/plan-r
 ## Analyse (Phase 2)
 
 `specs/visuel/front-ui-cart-analyse.png` (et `.excalidraw`).
+
+## Analyse validée (G2, 2026-11-05)
+
+Koya : « Je valide (G2) » pour le lot 4. Toutes les propositions sont retenues.
+
+| # | Point | Décision |
+|---|---|---|
+| Q-B1 | « Add to Cart » sans action | `button type="button"`, sans script ; icône décorative ; survol Green 700, focus visible |
+| Q-B2 | Ancien prix barré, non lu par les lecteurs d'écran | `s` pour l'ancien prix ; « Current price: » et « Original price: » masqués à l'écran |
+| Q-B3 | Photo du produit | `alt="Bottle of Gabrielle Essence Eau De Parfum among green leaves"` ; `picture`, photo mobile sous 640 px |
+| Q-B4 | Titres | `h1` = nom du produit ; « Perfume » en `p` au-dessus, en majuscules par le CSS |
+| Q-B5 | Pas de maquette tablette | Carte desktop 600 × 450 centrée dès 640 px ; en dessous, la carte mobile, 350 px au plus, à 12 px des bords au moins, à 80 px du haut |
+| Q-B6 | Refonte | Même dépôt en v2.0.0, historique gardé ; GitHub Pages servi depuis `gh-pages` et non plus `main` (accord de Koya à la publication) ; « Edit solution » |
