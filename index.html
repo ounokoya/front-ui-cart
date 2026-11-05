@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/front-ui-cart/assets/favicon-32x32-DQjEQYWa.png">
+    <title>Frontend Mentor | Product preview card component</title>
+    <script type="module" crossorigin src="/front-ui-cart/assets/index-BHQjXTBp.js"></script>
+    <link rel="stylesheet" crossorigin href="/front-ui-cart/assets/index-I1mDBZE0.css">
+  </head>
+  <!-- ADR-0006 : dès 640 px, 3 rangées et la carte au centre ; en dessous, la carte à 80 px du haut -->
+  <body class="bg-cream pt-20 font-sans sm:grid sm:min-h-dvh sm:grid-rows-[1fr_auto_1fr] sm:pt-0">
+    <main class="sm:row-start-2">
+      <article class="mx-auto grid w-[min(21.875rem,100%_-_1.5rem)] overflow-clip rounded-card bg-white sm:w-150 sm:grid-cols-2">
+        <!-- ADR-0005 : cadrage desktop dès 640 px, mobile en dessous (Q-B3) -->
+        <picture class="block">
+          <source media="(min-width: 40rem)" srcset="/front-ui-cart/assets/image-product-desktop-BjYfQaQN.jpg" width="600" height="900">
+          <img class="block h-auto w-full object-cover sm:h-full" src="/front-ui-cart/assets/image-product-mobile-cEYUpi0C.jpg" alt="Bottle of Gabrielle Essence Eau De Parfum among green leaves" width="700" height="684">
+        </picture>
+
+        <div class="px-8 pt-7.75 pb-8 sm:pt-8">
+          <p class="text-category text-grey uppercase">Perfume</p>
+          <h1 class="mt-6 font-display text-title font-bold text-black sm:mt-5">Gabrielle Essence Eau De Parfum</h1>
+          <p class="mt-5.75 text-body-mobile text-grey sm:mt-6 sm:text-body">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+
+          <!-- Q-B2 : les deux prix distingués à la lecture -->
+          <p class="mt-6.25 flex items-center gap-5 sm:mt-7.25">
+            <span class="sr-only">Current price: </span><span class="font-display text-price font-bold text-green-500">$149.99</span>
+            <s class="text-old-price text-grey"><span class="sr-only">Original price: </span><span>$169.99</span></s>
+          </p>
+
+          <!-- Q-B1 : pas d'action dans le challenge -->
+          <button class="add-to-cart mt-5.75 sm:mt-7.25" type="button">
+            <img src="data:image/svg+xml,%3csvg%20width='15'%20height='16'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14.383%2010.388a2.397%202.397%200%200%200-1.518-2.222l1.494-5.593a.8.8%200%200%200-.144-.695.8.8%200%200%200-.631-.28H2.637L2.373.591A.8.8%200%200%200%201.598%200H0v1.598h.983l1.982%207.4a.8.8%200%200%200%20.799.59h8.222a.8.8%200%200%201%200%201.599H1.598a.8.8%200%201%200%200%201.598h.943a2.397%202.397%200%201%200%204.507%200h1.885a2.397%202.397%200%201%200%204.331-.376%202.397%202.397%200%200%200%201.12-2.021ZM11.26%207.99H4.395L3.068%203.196h9.477L11.26%207.991Zm-6.465%206.392a.8.8%200%201%201%200-1.598.8.8%200%200%201%200%201.598Zm6.393%200a.8.8%200%201%201%200-1.598.8.8%200%200%201%200%201.598Z'%20fill='%23FFF'/%3e%3c/svg%3e" alt="" width="15" height="16">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+    </main>
+
+    <footer class="py-4 text-center text-attribution text-black sm:row-start-3 sm:self-end">
+      Challenge by <a class="link" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a class="link" href="https://www.frontendmentor.io/profile/ounokoya">Koya Esdras</a>.
+    </footer>
+  </body>
+</html>
