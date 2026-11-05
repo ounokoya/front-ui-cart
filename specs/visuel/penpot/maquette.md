@@ -1,6 +1,6 @@
 # Maquette Penpot — Product preview card component (refonte v2.0.0)
 
-> SDL-FM 1.5.0 Phase 3 (remise à niveau, étape B, lot 4). Fichier Penpot : « FM Newbie » (créé par Koya ; nom vérifié avant chaque écriture), page « Product preview ». **En attente de G3.**
+> SDL-FM 1.5.0 Phase 3 (remise à niveau, étape B, lot 4). Fichier Penpot : « FM Newbie » (créé par Koya ; nom vérifié avant chaque écriture), page « Product preview ». **Validée (G3, 2026-11-05)** avec les propositions : carte desktop centrée en tablette dès 640 px (G3-1), seuils de 5 % (G3-2), Fraunces avec son axe de taille optique (G3-3).
 > Décisions G2 appliquées : bouton sans action (Q-B1), ancien prix barré avec libellés masqués (Q-B2), photo décrite (Q-B3), « Perfume » au-dessus du `h1` (Q-B4), carte desktop dès 640 px (Q-B5).
 
 ## Rendu des exports

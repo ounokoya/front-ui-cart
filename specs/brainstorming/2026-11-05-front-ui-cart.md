@@ -36,3 +36,13 @@ Koya : « Je valide (G2) » pour le lot 4. Toutes les propositions sont retenues
 | Q-B4 | Titres | `h1` = nom du produit ; « Perfume » en `p` au-dessus, en majuscules par le CSS |
 | Q-B5 | Pas de maquette tablette | Carte desktop 600 × 450 centrée dès 640 px ; en dessous, la carte mobile, 350 px au plus, à 12 px des bords au moins, à 80 px du haut |
 | Q-B6 | Refonte | Même dépôt en v2.0.0, historique gardé ; GitHub Pages servi depuis `gh-pages` et non plus `main` (accord de Koya à la publication) ; « Edit solution » |
+
+## Maquette validée (G3, 2026-11-05)
+
+Koya : « Je valide (G3) » pour le lot 4. Maquette : `specs/visuel/penpot/maquette.md`. Toutes les propositions sont retenues.
+
+| # | Point | Décision |
+|---|---|---|
+| G3-1 | Tablette (Q-B5) | La carte desktop centrée, dès 640 px |
+| G3-2 | Seuils visuels | 5 % pour les 3 écrans calibrés |
+| G3-3 | Fraunces | Police variable avec son axe de taille optique (celle du calage) |
