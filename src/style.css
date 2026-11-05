@@ -1,1 +1,91 @@
 @import "tailwindcss";
+/* ADR-0004 : Montserrat et Fraunces (taille optique, G3-3) servies avec le site */
+@import "@fontsource/montserrat/500";
+@import "@fontsource/montserrat/700";
+@import "@fontsource-variable/fraunces/opsz";
+
+/* ADR-0003 : tokens de la bibliothèque Penpot (specs/visuel/penpot/maquette.md) */
+@theme {
+  --color-*: initial;
+  --color-white: hsl(0, 0%, 100%);
+  --color-green-500: hsl(158, 36%, 37%);
+  --color-green-700: hsl(158, 42%, 18%);
+  --color-black: hsl(212, 21%, 14%);
+  --color-grey: hsl(228, 12%, 48%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-link: hsl(228, 45%, 44%); /* liens de l'attribution (starter) */
+
+  --font-display: "Fraunces Variable", serif;
+  --font-sans: "Montserrat", sans-serif;
+  --text-category: 0.75rem;
+  --text-category--line-height: 1rem;
+  --text-category--letter-spacing: 0.3125rem;
+  --text-title: 2rem;
+  --text-title--line-height: 2rem;
+  --text-price: 2rem;
+  --text-price--line-height: 2rem;
+  --text-body: 0.875rem;
+  --text-body--line-height: 1.4375rem;
+  --text-body-mobile: 0.875rem;
+  --text-body-mobile--line-height: 1.375rem;
+  --text-old-price: 0.8125rem;
+  --text-old-price--line-height: 1.25rem;
+  --text-button: 0.875rem;
+  --text-button--line-height: 1.25rem;
+  --text-attribution: 0.6875rem;
+  --text-attribution--line-height: 1.5;
+
+  --radius-card: 0.625rem;
+  --radius-button: 0.5rem;
+}
+
+/* ADR-0005 : bouton sans action (Q-B1) ; transition du fond seulement (jamais du contour, M35) */
+@utility add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--spacing) * 2.75);
+  inline-size: 100%;
+  block-size: calc(var(--spacing) * 12.5);
+  border-radius: var(--radius-button);
+  background-color: var(--color-green-500);
+  color: var(--color-white);
+  font-size: var(--text-button);
+  line-height: var(--text-button--line-height);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 200ms;
+  &:hover {
+    background-color: var(--color-green-700);
+  }
+  &:focus-visible {
+    outline: calc(var(--spacing) / 2) solid var(--color-green-700);
+    outline-offset: calc(var(--spacing) * 0.75);
+  }
+  @variant sm {
+    block-size: calc(var(--spacing) * 12);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+/* liens de l'attribution, soulignés sauf au survol ; contour de focus de 2 px décalé de 2 px */
+@utility link {
+  color: var(--color-link);
+  text-decoration-line: underline;
+  &:hover {
+    text-decoration-line: none;
+  }
+  &:focus-visible {
+    outline: 0.125rem solid var(--color-link);
+    outline-offset: 0.125rem;
+  }
+}
+
+@layer base {
+  body {
+    /* largeurs de lettres non arrondies au pixel : les lignes se coupent comme sur l'image FM */
+    text-rendering: geometricPrecision;
+  }
+}

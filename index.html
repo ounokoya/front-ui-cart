@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  <script type="module" src="/src/main.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Product preview card component</title>
+    <script type="module" src="/src/main.js"></script>
   </head>
-<body>
+  <!-- ADR-0006 : dès 640 px, 3 rangées et la carte au centre ; en dessous, la carte à 80 px du haut -->
+  <body class="bg-cream pt-20 font-sans sm:grid sm:min-h-dvh sm:grid-rows-[1fr_auto_1fr] sm:pt-0">
+    <main class="sm:row-start-2">
+      <article class="mx-auto grid w-[min(21.875rem,100%_-_1.5rem)] overflow-clip rounded-card bg-white sm:w-150 sm:grid-cols-2">
+        <!-- ADR-0005 : cadrage desktop dès 640 px, mobile en dessous (Q-B3) -->
+        <picture class="block">
+          <source media="(min-width: 40rem)" srcset="./images/image-product-desktop.jpg" width="600" height="900">
+          <img class="block h-auto w-full object-cover sm:h-full" src="./images/image-product-mobile.jpg" alt="Bottle of Gabrielle Essence Eau De Parfum among green leaves" width="700" height="684">
+        </picture>
 
-  Perfume
+        <div class="px-8 pt-7.75 pb-8 sm:pt-8">
+          <p class="text-category text-grey uppercase">Perfume</p>
+          <h1 class="mt-6 font-display text-title font-bold text-black sm:mt-5">Gabrielle Essence Eau De Parfum</h1>
+          <p class="mt-5.75 text-body-mobile text-grey sm:mt-6 sm:text-body">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
 
-  Gabrielle Essence Eau De Parfum
+          <!-- Q-B2 : les deux prix distingués à la lecture -->
+          <p class="mt-6.25 flex items-center gap-5 sm:mt-7.25">
+            <span class="sr-only">Current price: </span><span class="font-display text-price font-bold text-green-500">$149.99</span>
+            <s class="text-old-price text-grey"><span class="sr-only">Original price: </span><span>$169.99</span></s>
+          </p>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+          <!-- Q-B1 : pas d'action dans le challenge -->
+          <button class="add-to-cart mt-5.75 sm:mt-7.25" type="button">
+            <img src="./images/icon-cart.svg" alt="" width="15" height="16">
+            Add to Cart
+          </button>
+        </div>
+      </article>
+    </main>
 
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+    <footer class="py-4 text-center text-attribution text-black sm:row-start-3 sm:self-end">
+      Challenge by <a class="link" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a class="link" href="https://www.frontendmentor.io/profile/ounokoya">Koya Esdras</a>.
+    </footer>
+  </body>
 </html>
