@@ -15,7 +15,7 @@ Le starter fournit la photo en deux cadrages : `image-product-desktop.jpg` (600 
 
 ## Décision
 - `picture` : `source media="(min-width: 40rem)"` vers `image-product-desktop.jpg` (600 × 900) ; `img` `image-product-mobile.jpg`, `width="700" height="684"`, `alt="Bottle of Gabrielle Essence Eau De Parfum among green leaves"`, à pleine taille de sa zone (`object-fit: cover`).
-- Prix : `p` avec `span.sr-only` « Current price: » + « $149.99 », puis `s` avec `span.sr-only` « Original price: » + « $169.99 ».
+- Prix : `p` avec `span.sr-only` « Current price: » puis le prix « $149.99 » dans son propre `span` ; puis `s` contenant `span.sr-only` « Original price: » et l'ancien prix « $169.99 » dans son propre `span` (chaque prix visible a un élément à lui : style et tests le visent sans le libellé masqué).
 - Bouton : `button type="button"`, `img` `icon-cart.svg` 15 × 16 `alt=""`, texte « Add to Cart » ; fond Green 500, Green 700 au survol ; transition de `background-color` seulement, supprimée avec `motion-reduce` ; contour de focus 2 px Green 700 décalé de 3 px.
 - `src/main.js` n'importe que la feuille de style.
 
