@@ -39,6 +39,10 @@ Aucun écart.
 
 Constat de la construction (Phase 6) : le prix visible partageait son élément avec son libellé masqué (« Current price: »), si bien qu'aucun élément n'avait « $149.99 » pour texte ; chaque prix visible a maintenant son propre élément (ADR-0005 précisé, commit `docs(adr)`).
 
-## 4. Verdict
+## 4. En ligne (Phase 12)
 
-Conforme à la spec et à la maquette validée (G3). Prêt pour la Phase 9 (README).
+`BASE_URL=https://ounokoya.github.io/front-ui-cart/ npx playwright test --workers=2` : **33 réussis sur 33**, écarts visuels identiques au local (0,60 %, 0,61 % et 2,37 %), sur la v2.0.0 déployée depuis la branche `gh-pages` (publication avec l'accord de Koya, 2026-11-05). GitHub Pages servait la branche `main` depuis 2023 : la source a été passée à `gh-pages` avant de pousser `main` (accord de Koya), pour que le site ne serve jamais les fichiers source.
+
+## 5. Verdict
+
+Conforme à la spec et à la maquette validée (G3). README fait (Phase 9) ; v2.0.0 en ligne. Prêt pour « Edit solution » sur FM (Phase 13).
